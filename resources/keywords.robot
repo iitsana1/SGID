@@ -2,24 +2,29 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${URL}                https://desafio-equipe.vercel.app/
-${TITULO_DA_PAGE}     Cadastrar Perfil de Usuário Inteligente
+#Variáveis de entrada:
 ${NOME_COMPLETO}      Ana Mary
-${ID_NOME}            id=nome
 ${DATA_NASC}          27/01/2005
+${PREF_NAV}           Modo escuro ativado, fonte grande, notificações desativadas
+${FOTO_PERFIL}        C:\\Desafio\\SGID\\gatoperfil.jfif
+
+#ID's:
+${ID_NOME}            id=nome
 ${ID_DATA_NASC}       id=dataNascimento
 ${ID_IMPRESSAO_DIG}   id=impressao-digital
-${PREF_NAV}           Modo escuro ativado, fonte grande, notificações desativadas
 ${ID_PREF_NAV}        id=preferenciasNavegacao
-${FOTO_PERFIL}        C:\\Desafio\\SGID\\gatoperfil.jfif
 ${ID_FOTO_PERFIL}     id=fotoPerfil
-${IDIOMA}             pt
 ${ID_IDIOMA}          id=idioma
-${NIVEL_PRIV}         medio
 ${ID_NIVEL_PRIV}      id=privacidade
 ${ID_CONSETIMENTO}    id=consentimento
+
+#Demais variáveis de identificação:
+${URL}                https://desafio-equipe.vercel.app/
+${TITULO_DA_PAGE}     Cadastrar Perfil de Usuário Inteligente
 ${BOTAO_FIM}          Finalizar Cadastro
 ${BOTAO_CANCELAR}     Cancelar
+${IDIOMA}             pt
+${NIVEL_PRIV}         medio
 
 *** Keywords ***
 Abrir o navegador

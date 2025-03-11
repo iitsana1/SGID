@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 ${NOME_COMPLETO}      Ana Mary
 ${DATA_NASC}          27/01/2005
 ${PREF_NAV}           Modo escuro ativado, fonte grande, notificações desativadas
-${FOTO_PERFIL}        C:\\Desafio\\SGID\\gatoperfil.jfif
+${FOTO_PERFIL}        C:\Desafio\SGID\test\gatoperfil.jfif
 
 #ID's:
 ${ID_NOME}            id=nome

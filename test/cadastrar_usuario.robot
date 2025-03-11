@@ -43,7 +43,7 @@ Caso de Teste 03 - Cadastro com apenas os campos obrigatório preenchidos
     E o usuário seleciona a "Preferência de Idioma" com @preferenciaIdioma
     E o usuário seleciona o "Nível de Privacidade" como @nivelPrivacidade
     E o usuário aciona a checkbox "Consetimento para Coleta de Dados"
-    Então o usuário clica no botão "Cancelar" e cancela o cadastro
+    Então o usuário clica no botão "Finalizar Cadastro" e finaliza com sucesso
 
 Caso de Teste 04 - Cadastro com todos os campos ausentes
     [Documentation]    Esse teste verifica a tentativa de cadastro com os campos ausentes.

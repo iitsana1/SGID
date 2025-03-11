@@ -65,17 +65,22 @@ E o usuário aciona a checkbox "Consetimento para Coleta de Dados"
     Select Checkbox   locator=${ID_CONSETIMENTO}
 
 Então o usuário clica no botão "Finalizar Cadastro" e finaliza com sucesso
+    Capture Page Screenshot    evidencias/antes_finalizar_cadastro_sucesso.png
     Click Button    locator=${BOTAO_FIM}
+    Capture Page Screenshot    evidencias/cadastro_sucesso.png
 
 Então o usuário clica no botão "Cancelar" e cancela o cadastro
     Click Button    locator=${BOTAO_CANCELAR}
+    Capture Page Screenshot    evidencias/cadastro_cancelado.png
         
 Então o usuário clica no botão "Finalizar Cadastro" sem preencher os campos
     Click Button    ${BOTAO_FIM}
+    Capture Page Screenshot    evidencias/erro_campos_obrigatorios.png
 
 Então o sistema exibe a mensagem "Preencha este campo" no campo "Nome Completo"
     Wait Until Element Is Visible    css=input:invalid
     Element Should Be Visible    css=input:invalid
+    Capture Page Screenshot    evidencias/erro_nome_completo.png
 
 E o perfil não é salvo
     #Faz permanecer na mesma página após o erro
@@ -84,6 +89,7 @@ E o perfil não é salvo
 Então o sistema exibe a mensagem "Preencha este campo" no campo "Data Nascimento"
     Wait Until Element Is Visible    css=input:invalid
     Element Should Be Visible    css=input:invalid
+        Capture Page Screenshot    evidencias/erro_data_nasc.png
 
 Então o usuário clica no botão "Finalizar Cadastro" 
     Click Button    ${BOTAO_FIM}
@@ -91,3 +97,4 @@ Então o usuário clica no botão "Finalizar Cadastro"
 Então o sistema exibe a mensagem "Selecione um arquivo" no campo "Foto de Perfil"
     Wait Until Element Is Visible    css=input:invalid
     Element Should Be Visible    css=input:invalid
+        Capture Page Screenshot    evidencias/erro_foto.png
